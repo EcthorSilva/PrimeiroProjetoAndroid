@@ -5,12 +5,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="40dp"
+    android:orientation="vertical"
     android:gravity="center"
-    tools:context=".Login_Activity">
+    tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:src="@drawable/avataricon" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_baseline_person"
+        android:hint="@string/usuario"
+        android:inputType="textEmailAddress"
+        android:maxLength="50"
+        android:padding="10dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_baseline_lock"
+        android:hint="@string/senha"
+        android:inputType="numberPassword"
+        android:maxLength="10"
+        android:padding="10dp"
+        android:textSize="15sp" />
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="@string/entrar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="@string/esqueceu_sua_senha"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="@string/cadastrese"
+        android:textStyle="bold" />
 
 </LinearLayout>
