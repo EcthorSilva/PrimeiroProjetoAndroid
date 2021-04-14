@@ -8,6 +8,6 @@
     android:gravity="center"
     tools:context=".Splash_Activity">
 
-    <include layout="@layout/imagem_splash" />
+    <include layout="@layout/imagem_splash"/>
 
 </LinearLayout>

@@ -22,23 +22,22 @@
             android:textStyle="bold" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textEmail"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:hint="Email"
-            app:counterEnabled="true"
-            app:counterMaxLength="30"
+
             app:endIconMode="clear_text"
             app:startIconContentDescription="Email icon"
             app:startIconDrawable="@drawable/ic_baseline_email">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtEmailUser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:id="@+id/edtEmailUser"/>
+                android:maxLength="30" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -54,10 +53,10 @@
             app:startIconDrawable="@drawable/ic_baseline_lock">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtSenhaUser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:id="@+id/edtSenhaUser"/>
+                android:inputType="textPassword" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -75,28 +74,27 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                />
+                android:inputType="textPassword" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
+            android:id="@+id/cadastrar"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="25dp"
-            android:text="Cadastrar"
-            android:id="@+id/cadastrar"/>
+            android:text="Cadastrar" />
 
         <Button
+            android:id="@+id/btnVoltar"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="25dp"
-            android:text="Voltar"
-            android:id="@+id/btnVoltar"/>
+            android:text="Voltar" />
 
     </LinearLayout>
 
